@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="GoldenRatioInXaml.Views.GoldenRatio9"
+             Title="9 Part Golden Ratio">
+    <ContentPage.Content>
+        <Grid ColumnSpacing="1" RowSpacing="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="13*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="5*"/>
+                <RowDefinition Height="34*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="21*"/>
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="8*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid BackgroundColor="Purple" Grid.Row="0" Grid.RowSpan="4" >
+                <StackLayout >
+                    <Label Text="21" TextColor="White" FontSize="Large" />
+                </StackLayout>
+            </Grid>
+            
+            <Grid BackgroundColor="Green" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="4">
+                <StackLayout >
+                    <Label Text="13" TextColor="White" />
+                </StackLayout>
+            </Grid>
+            
+            <Grid BackgroundColor="Blue" Grid.Row="1" Grid.Column="4" Grid.RowSpan="3">
+                <StackLayout >
+                    <Label Text="8"  TextColor="White" />
+                </StackLayout>
+            </Grid>
+
+            <Grid BackgroundColor="Orange" Grid.Row="1" Grid.RowSpan="2" Grid.Column="1">
+                <StackLayout >
+                    <Label Text="3" />
+                </StackLayout>
+            </Grid>
+
+            <Grid BackgroundColor="Yellow" Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="2">
+                <StackLayout >
+                    <Label Text="2" />
+                </StackLayout>
+            </Grid>
+            <Grid BackgroundColor="Black" Grid.Row="2" Grid.Column="2">
+                <StackLayout>
+                    <Label Text="1" TextColor="White" FontSize="Micro"/>
+                </StackLayout>
+            </Grid>
+            <Grid BackgroundColor="Black" Grid.Row="2" Grid.Column="3">
+                <StackLayout >
+                    <Label Text="1" TextColor="White" FontSize="Micro"/>
+                </StackLayout>
+            </Grid>
+
+            <Grid BackgroundColor="Red" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="3">
+                <StackLayout>
+                    <Label Text="5"  TextColor="White" />
+                </StackLayout>
+            </Grid>
+
+            <Grid BackgroundColor="SaddleBrown" Grid.Row="4" Grid.ColumnSpan="5">
+                <StackLayout>
+                    <Label Text="34" FontSize="Large" TextColor="White"/>
+                </StackLayout>
+            </Grid>
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
